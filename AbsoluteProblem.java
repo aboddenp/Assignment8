@@ -9,7 +9,9 @@ import java.lang.Math;
  * SWE 332, Fall 2018
  * Assignment 8
  * Src: https://github.com/aboddenp/Assignment8
- *
+ * Contributions: 
+ *  Aster Bodden Pineda: Example Code 1 and Comparator implementation using lambda notation
+ * 	Abdullah Alaqeel: Example Code 2 and Explanation and summary 
  */
 public class AbsoluteProblem {
 
@@ -31,9 +33,11 @@ public class AbsoluteProblem {
 			hashSet.add(i);
 		}
 
+		System.out.println("added same elements to hashSet and TreeSet");
+
 		// since these two are Sets they both should have the same value !! [-1, 0, 1] 
 		boolean equality = treeSet.equals(hashSet);
-		System.out.println(equality); // outputs False  
+		System.out.println("TreeSet.equals(hashset) : " + equality); // outputs False  
 
 		// show what values each treeSet have:  
 		System.out.println("TreeSet after adding {-1,0,1}: " + treeSet.toString()); // outputs [-1, 0]
