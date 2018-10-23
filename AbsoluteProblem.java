@@ -18,7 +18,7 @@ public class AbsoluteProblem {
 	public static void main(String[] args) {
 
 		Comparator<Integer> byAbsolute = 
-		(Integer x,  Integer y) -> { // create Comparator using lambda expressions 
+		(x, y) -> { // create Comparator using lambda expressions 
 			x = Math.abs(x.intValue());
 			y = Math.abs(y.intValue());
 			return x.compareTo(y); 
@@ -37,7 +37,7 @@ public class AbsoluteProblem {
 
 		// since these two are Sets they both should have the same value !! [-1, 0, 1] 
 		boolean equality = treeSet.equals(hashSet);
-		System.out.println("TreeSet.equals(hashset) : " + equality); // outputs False  
+		System.out.println("TreeSet.equals(hashset) = " + equality); // outputs False  
 
 		// show what values each treeSet have:  
 		System.out.println("TreeSet after adding {-1,0,1}: " + treeSet.toString()); // outputs [-1, 0]
